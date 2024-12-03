@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:core= "sap.ui.core" xmlns:f="sap.ui.layout.form" 
+xmlns="sap.m">
+    <Dialog id="dialogId" title="EmployeeDetails">
+        <content>
+            <!-- <Text text="Dialog is opened"></Text> -->
+            <FlexBox >
+               <VBox >
+                    <Label text="ID" />
+                    <Input id="idInput" width="250px" editable="true"/>
+                    <Label text="First Name" />
+                    <Input id="firstNameInput" width="250px" editable="true"/>
+                    <Label text="Last Name" />
+                    <Input id="lastNameInput" width="250px" editable="true"/>
+                    <Label text="Phone"/>
+                    <Input id="phoneInput" width="250px" editable="true"/>
+                    <Label text="Department" />
+                    <Input id="departmentInput" width="250px" editable="true"/>
+                    <Label text="Position" />
+                    <Input id="positionInput" width="250px" editable="true"/>
+                    <Label text="Joining Date" />
+                    <Input id="joiningDateInput" width="250px" editable="true"/>
+               </VBox>
+            </FlexBox>
+        </content>
+        <Bar>
+            <contentRight>
+            <Button text="Submit" press="onSubmitDialog"></Button>
+            <Button text="Reset" press="onClear"></Button>
+            <Button text="close" press="onclose"></Button>
+           </contentRight>
+         </Bar>
+    </Dialog>
+</core:FragmentDefinition>

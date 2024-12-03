@@ -1,0 +1,62 @@
+<mvc:View controllerName="testing.controller.Test"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="ABC">
+    <content></content>
+    <subHeader>
+        <Bar>
+            <contentRight>
+                <Button text="Add" icon="sap-icon://add" press="onOpenDialog">
+                </Button>
+                 </contentRight>
+        </Bar>
+    </subHeader>
+                <Table id="employeeTable" headerText="EmployeeList" items="{/employees}">
+                   <columns>
+                     <Column >
+                         <Text text="Employee Id"/>
+                     </Column>
+                     <Column >
+                         <Text text="FirstName"/>
+                     </Column>
+                     <Column >
+                         <Text text="LastName"/>
+                     </Column>
+                     <Column >
+                         <Text text="MobileNo"/>
+                     </Column>
+                     <Column >
+                         <Text text="Department"/>
+                     </Column>
+                     <Column >
+                         <Text text="Position"/>
+                     </Column>
+                     <Column >
+                         <Text text="Joining Date"/>
+                     </Column>
+                      <Column >
+                         <Text text="Actions"/>
+                     </Column>
+                   </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{sEmpId}"/>
+                            <Text text="{sfirstName}"/>
+                            <Text text="{slastName}"/>
+                            <Text text="{sphone}"/>
+                            <Text text="{sdepartment}"/>
+                            <Text text="{sposition}"/>
+                            <Text text="{sjoiningDate}"/>
+                            <HBox>
+                            <!-- class is used to provide space between a delete Button and edit Button -->
+                            <Button icon="sap-icon://delete" class="sapUiTinyMarginEnd" press="onDelete" type="Reject"></Button>
+                            <Button icon="sap-icon://user-edit" press="onUpdateIcon"></Button>
+                            </HBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+                </Table>
+           
+        </Page>
+</mvc:View>

@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns:layout="sap.ui.layout" xmlns:core= "sap.ui.core" xmlns:f="sap.ui.layout.form" 
+xmlns="sap.m">
+    <Dialog id="UpdateId" title="Update Details">
+        <content>
+            <FlexBox >
+               <VBox >
+                    <Label text="ID" />
+                    <Input id="id_e" width="250px" editable="true"/>
+                    <Label text="First Name" />
+                    <Input id="firstName_e" width="250px" editable="true"/>
+                    <Label text="Last Name" />
+                    <Input id="lastName_e" width="250px" editable="true"/>
+                    <Label text="Phone"/>
+                    <Input id="phone_e" width="250px" editable="true"/>
+                    <Label text="Department" />
+                    <Input id="department_e" width="250px" editable="true"/>
+                    <Label text="Position" />
+                    <Input id="position_e" width="250px" editable="true"/>
+                    <Label text="Joining Date" />
+                    <Input id="joiningDate_e" width="250px" editable="true"/>
+               </VBox>
+            </FlexBox>
+        </content>
+        <Bar>
+            <contentRight>
+            <Button text="Update" press="onUpdate"></Button>
+            <Button text="cancel" press="oncloseBtn"></Button>
+           </contentRight>
+         </Bar>
+    </Dialog>
+</core:FragmentDefinition>
