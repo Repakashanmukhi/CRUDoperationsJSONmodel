@@ -49,6 +49,8 @@ sap.ui.define([
                 aEmployees.push(oNewEmployee);
                 oModel.setProperty("/employees", aEmployees);
             }
+            // Close the dialog
+            that.dialogId.close();
         },
         onClear: function(){
             sap.ui.getCore().byId("idInput").setValue();
