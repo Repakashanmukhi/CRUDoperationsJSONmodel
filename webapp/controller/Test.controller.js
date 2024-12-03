@@ -27,6 +27,7 @@ sap.ui.define([
             that.dialogId.close()
         },
         onSubmitDialog: function(){
+           
             var sEmpId = sap.ui.getCore().byId("idInput").getValue();
 			var sfirstName = sap.ui.getCore().byId("firstNameInput").getValue();
 			var slastName = sap.ui.getCore().byId("lastNameInput").getValue();
@@ -49,10 +50,10 @@ sap.ui.define([
                 aEmployees.push(oNewEmployee);
                 oModel.setProperty("/employees", aEmployees);
             }
-            // Close the dialog
+            
             that.dialogId.close();
-        },
-        onClear: function(){
+        
+            
             sap.ui.getCore().byId("idInput").setValue();
             sap.ui.getCore().byId("firstNameInput").setValue();
             sap.ui.getCore().byId("lastNameInput").setValue();
